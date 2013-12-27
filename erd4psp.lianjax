@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <app>
 <set-property name="apptitle" value="Lianja Demo App" />
-<set-property name="appsidebarcategory" value="General" />
+<set-property name="appsidebarcategory" value="ProSysPlus" />
 <set-property name="appsidebarcaption" value="erd4psp" />
 <set-property name="appsidebaricon" value=":/images/recital_icon_32x32" />
 <set-property name="appwidth" value="1284" />
@@ -21,7 +21,7 @@
 <set-property name="htmleditor" value="Desktop" />
 <set-property name="apptilebackcolor" value="#00efefef" />
 <set-property name="scriptinglanguage" value="Recital" />
-<set-property name="apppublished" value="false" />
+<set-property name="apppublished" value="true" />
 <set-property name="uistatestable" value="lianjademo_uistates" />
 <set-property name="uirulestable" value="lianjademo_uirules" />
 <set-property name="helptable" value="" />
@@ -30,7 +30,7 @@
 <set-property name="permread" value="" />
 <set-property name="permupdate" value="" />
 <set-property name="permdelete" value="" />
-<set-property name="appauthor" value="" />
+<set-property name="appauthor" value="Professional Systems Plus, Inc." />
 <set-property name="appversion" value="1.0" />
 <set-property name="appdescription" value="" />
 <set-property name="initaction" value="" />

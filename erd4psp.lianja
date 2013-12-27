@@ -3,7 +3,7 @@
 <appproperties>
 <xamlversion>0.0.11</xamlversion>
 <apptitle>Lianja Demo App</apptitle>
-<appsidebarcategory>General</appsidebarcategory>
+<appsidebarcategory>ProSysPlus</appsidebarcategory>
 <appsidebarcaption>erd4psp</appsidebarcaption>
 <appsidebaricon>:/images/recital_icon_32x32</appsidebaricon>
 <appwidth>1284</appwidth>
@@ -11,10 +11,10 @@
 <appresizable>1</appresizable>
 <appmaximize>0</appmaximize>
 <apploginrequired>1</apploginrequired>
-<apppublished>0</apppublished>
+<apppublished>1</apppublished>
 <confirmdeleterecord>1</confirmdeleterecord>
 <timelinesenabled>0</timelinesenabled>
-<appauthor></appauthor>
+<appauthor>Professional Systems Plus, Inc.</appauthor>
 <appversion>1.0</appversion>
 <appdescription></appdescription>
 <runtimeconnstr></runtimeconnstr>
