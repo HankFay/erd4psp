@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+<appproperties>
+<xamlversion>0.0.11</xamlversion>
+<apptitle>ERD4Lianja</apptitle>
+<appsidebarcategory>ProSysPlus</appsidebarcategory>
+<appsidebarcaption>ERD4Lianja</appsidebarcaption>
+<appsidebaricon>:/images/recital_icon_32x32</appsidebaricon>
+<appwidth>1284</appwidth>
+<appheight>1048</appheight>
+<appresizable>1</appresizable>
+<appmaximize>0</appmaximize>
+<apploginrequired>1</apploginrequired>
+<apppublished>1</apppublished>
+<confirmdeleterecord>1</confirmdeleterecord>
+<timelinesenabled>0</timelinesenabled>
+<appauthor>Professional Systems Plus, Inc.</appauthor>
+<appversion>1.0</appversion>
+<appdescription></appdescription>
+<runtimeconnstr></runtimeconnstr>
+<apppublisher>copy</apppublisher>
+<apppublisherpath></apppublisherpath>
+<apppublisherarguments></apppublisherarguments>
+<apppublisherdirectory>C:\Lianja\cloudserver\tenants\public\</apppublisherdirectory>
+<apppublisherdatabase></apppublisherdatabase>
+<apppublisherserver></apppublisherserver>
+<apppublisherusername></apppublisherusername>
+<apppublisherpassword></apppublisherpassword>
+<apppublishercopydatabase>false</apppublishercopydatabase>
+<appserverlocation>http://www.lianja.com</appserverlocation>
+<appservertype></appservertype>
+<appserveruser></appserveruser>
+<appserverdatabase>southwind</appserverdatabase>
+<appserverpassword>/root/.local/share/data//lianjadata/</appserverpassword>
+<addblankformsection>false</addblankformsection>
+<hideheaderbar>true</hideheaderbar>
+<showbackbutton>true</showbackbutton>
+<showpagesmenu>true</showpagesmenu>
+<hideheadericons>true</hideheadericons>
+<pagecount>4</pagecount>
+<scriptinglanguage>Recital</scriptinglanguage>
+<customlibrary></customlibrary>
+<htmleditor>Desktop</htmleditor>
+<apptilebackcolor>#00efefef</apptilebackcolor>
+<apptiledynamiccontents>0</apptiledynamiccontents>
+<apptilesize>1x1</apptilesize>
+<apptileorder>1</apptileorder>
+<apptileurl></apptileurl>
+<uistatestable></uistatestable>
+<uirulestable>lianjademo_uirules</uirulestable>
+<helptable></helptable>
+<permadmin></permadmin>
+<permcreate></permcreate>
+<permread></permread>
+<permupdate></permupdate>
+<permdelete></permdelete>
+<initaction></initaction>
+<destroyaction></destroyaction>
+<loadaction></loadaction>
+<readyaction></readyaction>
+<unloadaction></unloadaction>
+<timeraction></timeraction>
+<timerinterval>0</timerinterval>
+<desktopui>1</desktopui>
+<webui>1</webui>
+<mobileui>1</mobileui>
+<theme>Default</theme>
+<webtheme>Default</webtheme>
+<mobiletheme>Default</mobiletheme>
+<navbartype>Flat</navbartype>
+<navbarcss></navbarcss>
+<pagemenutype>Panel</pagemenutype>
+<pagemenurowheight>40</pagemenurowheight>
+<pagemenucss></pagemenucss>
+<pagesectionheadertype>Gradient</pagesectionheadertype>
+<pagesectionheaderheight>26</pagesectionheaderheight>
+<pagesectionheaderfontsize>8</pagesectionheaderfontsize>
+<pagesectionheaderbackcolor>#00fafafa</pagesectionheaderbackcolor>
+<pagesectionheaderforecolor>#808080ff</pagesectionheaderforecolor>
+<pagesectioncss></pagesectioncss>
+<pagesectionheadercss></pagesectionheadercss>
+<pagesectionheadericonset>Gradient</pagesectionheadericonset>
+</appproperties>
+<menubutton>
+    <pageid>metadata_editor</pageid>
+    <caption>Edit Metadata</caption>
+</menubutton>
+<menubutton>
+    <pageid>Model_Setup</pageid>
+    <caption>Model Setup</caption>
+</menubutton>
+<menubutton>
+    <pageid>ERD4Lianja_Setup</pageid>
+    <caption>ERD4Lianja Setup</caption>
+</menubutton>
+<menubutton>
+    <pageid>Data_Designer</pageid>
+    <caption>Data Designer</caption>
+</menubutton>
+<page>
+    <id>metadata_editor</id>
+    <title>Edit Metadata</title>
+    <backcolor>#ffffffff</backcolor>
+    <forecolor>#000000ff</forecolor>
+    <pagegradient>false</pagegradient>
+    <pagegradienttype>0</pagegradienttype>
+    <pagefromcolor>#fafafaff</pagefromcolor>
+    <pagetocolor>#c0c0c0ff</pagetocolor>
+    <searchboxminchars>1</searchboxminchars>
+    <headerbackcolor>#212121ff</headerbackcolor>
+    <headerforecolor>#ffffffff</headerforecolor>
+    <navigationpanelcollapseonload>false</navigationpanelcollapseonload>
+    <navigationpanelcollapsable>false</navigationpanelcollapsable>
+    <headerfromcolor>#c8c8c8ff</headerfromcolor>
+    <headertocolor>#000000ff</headertocolor>
+    <marginsize>0</marginsize>
+    <hidecustomsearchicon>true</hidecustomsearchicon>
+    <hidefullscreenicon>false</hidefullscreenicon>
+    <hidenotificationicon>false</hidenotificationicon>
+    <hideshareicon>true</hideshareicon>
+    <hidehomeicon>false</hidehomeicon>
+    <showoptionsbutton>false</showoptionsbutton>
+    <headerbottomborder>true</headerbottomborder>
+    <headerborderbottomcolor>#ffa500ff</headerborderbottomcolor>
+    <leftsidebartreecaptionheight>26</leftsidebartreecaptionheight>
+    <leftsidebarbackcolor>#f9f9f9ff</leftsidebarbackcolor>
+    <leftsidebarforecolor>#000000ff</leftsidebarforecolor>
+    <leftsidebarbordercolor>#e0ecffff</leftsidebarbordercolor>
+    <rightsidebarbackcolor>#f9f9f9ff</rightsidebarbackcolor>
+    <rightsidebarforecolor>#000000ff</rightsidebarforecolor>
+    <rightsidebarbordercolor>#e0ecffff</rightsidebarbordercolor>
+    <alwayssaveinpagelibrary>false</alwayssaveinpagelibrary>
+    <leftsidebarimagevisible>false</leftsidebarimagevisible>
+    <hideheadericon>true</hideheadericon>
+    <hidesearchbox>false</hidesearchbox>
+    <timerinterval>0</timerinterval>
+    <stretch>false</stretch>
+    <stretchlastsectionatruntime>false</stretchlastsectionatruntime>
+    <scrollbarvisibleatruntime>true</scrollbarvisibleatruntime>
+    <usescrollbarminheight>0</usescrollbarminheight>
+    <headervisible>true</headervisible>
+    <headerheight>40</headerheight>
+    <headercaption>Metadata Editor</headercaption>
+    <refreshwhenactivated>true</refreshwhenactivated>
+    <headergradient>true</headergradient>
+    <headergradienttype>0</headergradienttype>
+    <leftsidebarvisible>false</leftsidebarvisible>
+    <leftsidebartreevisible>false</leftsidebartreevisible>
+    <leftsidebartreewidth>240</leftsidebartreewidth>
+    <leftsidebartreerowheight>0</leftsidebartreerowheight>
+    <leftsidebartreeshowchildindicators>false</leftsidebartreeshowchildindicators>
+    <leftsidebartreedoubleclick>true</leftsidebartreedoubleclick>
+    <leftsidebartreealternatingcolors>true</leftsidebartreealternatingcolors>
+    <leftsidebartreegridlines>false</leftsidebartreegridlines>
+    <navtreeactionbarvisible>false</navtreeactionbarvisible>
+    <leftsidebartreecaptionvisible>false</leftsidebartreecaptionvisible>
+    <navigationpanelposition>Left</navigationpanelposition>
+    <leftsidebartreeselectioncolumn>0</leftsidebartreeselectioncolumn>
+    <leftsidebartreecaption>Navigation Panel</leftsidebartreecaption>
+    <leftsidebartreefontsize>0</leftsidebartreefontsize>
+    <rightsidebarvisible>false</rightsidebarvisible>
+    <hideactionbaratruntime>true</hideactionbaratruntime>
+    <syncactionbar>true</syncactionbar>
+    <leftsidebarloginpanelvisible>true</leftsidebarloginpanelvisible>
+    <leftsidebarappsvisible>false</leftsidebarappsvisible>
+    <leftsidebarwidth>240</leftsidebarwidth>
+    <rightsidebarwidth>160</rightsidebarwidth>
+    <leftsidebarappsheadervisible>true</leftsidebarappsheadervisible>
+    <leftsidebaritemsvisible>true</leftsidebaritemsvisible>
+    <leftsidebarmenuvisible>true</leftsidebarmenuvisible>
+    <leftsidebarfavoriteitems>0</leftsidebarfavoriteitems>
+    <leftsidebarrecentlyvieweditems>10</leftsidebarrecentlyvieweditems>
+    <leftsidebarrecentlymodifieditems>10</leftsidebarrecentlymodifieditems>
+    <leftsidebarwatcheditems>0</leftsidebarwatcheditems>
+    <leftsidebarrefreshinterval>0</leftsidebarrefreshinterval>
+    <rightsidebarcustomgadgetvisible>false</rightsidebarcustomgadgetvisible>
+    <rightsidebarcustomgadgetexpanded>false</rightsidebarcustomgadgetexpanded>
+    <rightsidebarcustomgadgetcaption>Untitled</rightsidebarcustomgadgetcaption>
+    <rightsidebarcustomgadgetheight>200</rightsidebarcustomgadgetheight>
+    <rightsidebarcustomgadgetrefreshinterval>0</rightsidebarcustomgadgetrefreshinterval>
+    <rightsidebarcustomgadgetstretch>false</rightsidebarcustomgadgetstretch>
+    <rightsidebarcontentinterval1>0</rightsidebarcontentinterval1>
+    <rightsidebarcontentinterval2>0</rightsidebarcontentinterval2>
+    <rightsidebarcontentinterval3>0</rightsidebarcontentinterval3>
+    <rightsidebarcontentinterval4>0</rightsidebarcontentinterval4>
+    <rightsidebarcontentvisible1>true</rightsidebarcontentvisible1>
+    <rightsidebarcontentvisible2>true</rightsidebarcontentvisible2>
+    <rightsidebarcontentvisible3>true</rightsidebarcontentvisible3>
+    <rightsidebarcontentvisible4>true</rightsidebarcontentvisible4>
+    <rightsidebarcontentexpanded1>true</rightsidebarcontentexpanded1>
+    <rightsidebarcontentexpanded2>true</rightsidebarcontentexpanded2>
+    <rightsidebarcontentexpanded3>true</rightsidebarcontentexpanded3>
+    <rightsidebarcontentexpanded4>true</rightsidebarcontentexpanded4>
+    <rightsidebarcontentheight1>140</rightsidebarcontentheight1>
+    <rightsidebarcontentheight2>140</rightsidebarcontentheight2>
+    <rightsidebarcontentheight3>140</rightsidebarcontentheight3>
+    <rightsidebarcontentheight4>140</rightsidebarcontentheight4>
+    <transparency>0</transparency>
+    <accordionatruntime>false</accordionatruntime>
+    <useaccordiononlowres>false</useaccordiononlowres>
+    <useaccordiononlowresvalue>1024</useaccordiononlowresvalue>
+    <accordionstackatruntime>false</accordionstackatruntime>
+    <collapseleftsidebar>false</collapseleftsidebar>
+    <collapserightsidebar>false</collapserightsidebar>
+    <hidefrommenuatruntime>false</hidefrommenuatruntime>
+    <menuicon>:/images/forms</menuicon>
+    <scriptinglanguage>Inherit</scriptinglanguage>
+    <footervisible>false</footervisible>
+    <footerheight>40</footerheight>
+    <footercustomgadgetrefreshinterval>0</footercustomgadgetrefreshinterval>
+    <footergradient>false</footergradient>
+    <footergradienttype>1</footergradienttype>
+    <footerbackcolor>#f9f9f9ff</footerbackcolor>
+    <footerforecolor>#000000ff</footerforecolor>
+    <footerfromcolor>#2b2b2bff</footerfromcolor>
+    <footertocolor>#212121ff</footertocolor>
+    <gesturesenabled>false</gesturesenabled>
+    <desktopui>true</desktopui>
+    <webui>true</webui>
+    <mobileui>true</mobileui>
+    <section>
+        <id>entity</id>
+        <title>Entity</title>
+        <type>canvas</type>
+        <database>erd4psp</database>
+        <table>PENTITY</table>
+        <filter>pentity.cpentity_pk = gcpentity_pk</filter>
+        <height>469</height>
+        <heightfixed>false</heightfixed>
+        <cascadedeletes>false</cascadedeletes>
+        <applydictionary>false</applydictionary>
+        <timelinesenabled>false</timelinesenabled>
+        <backcolor>#f9f9f9ff</backcolor>
+        <forecolor>#000000ff</forecolor>
+        <footerbackcolor>#efefefff</footerbackcolor>
+        <footerforecolor>#aaaaaaff</footerforecolor>
+        <headergradient>false</headergradient>
+        <headergradienttype>1</headergradienttype>
+        <headerfromcolor>#fafafaff</headerfromcolor>
+        <headertocolor>#d6d6d6ff</headertocolor>
+        <headerbackcolor>#00fafafa</headerbackcolor>
+        <headerforecolor>#808080ff</headerforecolor>
+        <gridbackcolor>#f9f9f9ff</gridbackcolor>
+        <gridforecolor>#000000ff</gridforecolor>
+        <sectiongradient>false</sectiongradient>
+        <sectiongradienttype>0</sectiongradienttype>
+        <sectionfromcolor>#fafafaff</sectionfromcolor>
+        <sectiontocolor>#c0c0c0ff</sectiontocolor>
+        <hideheaderatruntime>false</hideheaderatruntime>
+        <hidenavbuttons>false</hidenavbuttons>
+        <autoresizegridcolumns>false</autoresizegridcolumns>
+        <autostretchgridcolumns>true</autostretchgridcolumns>
+        <readonly>false</readonly>
+        <doubleclicktoedit>false</doubleclicktoedit>
+        <showsplitedit>false</showsplitedit>
+        <showgridmemos>false</showgridmemos>
+        <scrollbar>true</scrollbar>
+        <returntabs>false</returntabs>
+        <collapsableatruntime>true</collapsableatruntime>
+        <excludeaccordionatruntime>false</excludeaccordionatruntime>
+        <hideactionbaratruntime>false</hideactionbaratruntime>
+        <showokcancelbuttons>true</showokcancelbuttons>
+        <showadddeletebuttons>true</showadddeletebuttons>
+        <showprintbutton>true</showprintbutton>
+        <showeditbutton>true</showeditbutton>
+        <resizableatruntime>false</resizableatruntime>
+        <spacervisible>false</spacervisible>
+        <columncount>0</columncount>
+        <stretch>false</stretch>
+        <margin>0</margin>
+        <spacing>0</spacing>
+        <borderradius>0</borderradius>
+        <transparency>0</transparency>
+        <labelwidth>160</labelwidth>
+        <showgrid>true</showgrid>
+        <hidesearchicon>false</hidesearchicon>
+        <hidecustomsearchicon>true</hidecustomsearchicon>
+        <showhelpicon>false</showhelpicon>
+        <showinfotipsicon>false</showinfotipsicon>
+        <minimumheight>0</minimumheight>
+        <sectionmenuvisible>false</sectionmenuvisible>
+        <sectionmenuheight>20</sectionmenuheight>
+        <sectionmenubackcolor>#333333ff</sectionmenubackcolor>
+        <sectionmenuforecolor>#bababaff</sectionmenuforecolor>
+        <headerfontsize>8</headerfontsize>
+        <footervisible>false</footervisible>
+        <autorelatechildsection>true</autorelatechildsection>
+        <hideformnavbar>false</hideformnavbar>
+        <refreshinterval>0</refreshinterval>
+        <showwhenloggedin>true</showwhenloggedin>
+        <showwhenloggedout>true</showwhenloggedout>
+        <gridreadonly>false</gridreadonly>
+        <splitbar>false</splitbar>
+        <showgridokcancelbuttons>true</showgridokcancelbuttons>
+        <showgridactionbar>true</showgridactionbar>
+        <gridrowheight>22</gridrowheight>
+        <tabcount>0</tabcount>
+        <tabmargin>10</tabmargin>
+        <tabbackcolor>#e0ecffff</tabbackcolor>
+        <tabforecolor>#000080ff</tabforecolor>
+        <delegatehyperlinks>false</delegatehyperlinks>
+        <scriptinglanguage>Inherit</scriptinglanguage>
+        <customlibrary>lib_metadata_editor_entity.prg</customlibrary>
+        <webvieweditable>false</webvieweditable>
+        <editonclick>false</editonclick>
+        <editondoubleclick>false</editondoubleclick>
+        <reportgridlines>false</reportgridlines>
+        <calendartitlecolumn>eventtitle</calendartitlecolumn>
+        <calendarstartdatetimecolumn>eventstart</calendarstartdatetimecolumn>
+        <calendarenddatetimecolumn>eventend</calendarenddatetimecolumn>
+        <calendaralldaycolumn>eventallday</calendaralldaycolumn>
+        <calendarrepeatingcolumn>eventrepeat</calendarrepeatingcolumn>
+        <calendareventtypecolumn>eventtype</calendareventtypecolumn>
+        <desktopui>true</desktopui>
+        <webui>true</webui>
+        <mobileui>true</mobileui>
+        <gesturesenabled>false</gesturesenabled>
+        <imagestripdetailsvisible>false</imagestripdetailsvisible>
+        <imagestripdetailsbackcolor>black</imagestripdetailsbackcolor>
+        <imagestripdetailsforecolor>white</imagestripdetailsforecolor>
+        <hidetabbaratruntime>false</hidetabbaratruntime>
+        <reportimagewidth>0</reportimagewidth>
+        <reportimageheight>0</reportimageheight>
+        <reportcellwidth>0</reportcellwidth>
+        <reportcellheight>0</reportcellheight>
+        <reporttablecolumns>1</reporttablecolumns>
+        <reportreadmore>false</reportreadmore>
+        <reportreadmoresize>0</reportreadmoresize>
+        <formitem>
+            <id>field1</id>
+            <showcaption>true</showcaption>
+            <top>206</top>
+            <left>543</left>
+            <width>435</width>
+            <height>67</height>
+            <absoluteposition>false</absoluteposition>
+            <absolutepositiony>5</absolutepositiony>
+            <absolutepositionx>5</absolutepositionx>
+            <absolutepositionwidth>425</absolutepositionwidth>
+            <absolutepositionheight>57</absolutepositionheight>
+            <hidesearchkeyindicator>false</hidesearchkeyindicator>
+            <showdata>true</showdata>
+            <caption>OnOpen</caption>
+            <captionborderwidth>0</captionborderwidth>
+            <captionbordercolor>#c0c0c0ff</captionbordercolor>
+            <captionalignment>LeftCenter</captionalignment>
+            <type>Field</type>
+            <controlsource>PENTITY.MONOPEN</controlsource>
+            <password>false</password>
+            <mandatory>false</mandatory>
+            <mandatorybackcolor>#00fff8dc</mandatorybackcolor>
+            <returntabs>false</returntabs>
+            <dialogbutton>false</dialogbutton>
+            <canselectrows>true</canselectrows>
+            <autosuggestcolumn>0</autosuggestcolumn>
+            <autosuggestcolumnselect>0</autosuggestcolumnselect>
+            <searchfield>false</searchfield>
+            <readonly>false</readonly>
+            <editable>true</editable>
+            <refreshongridclick>false</refreshongridclick>
+            <relateonchange>false</relateonchange>
+            <refreshcalculatedonchange>false</refreshcalculatedonchange>
+            <defaultsearchfieldorder>false</defaultsearchfieldorder>
+            <userselectablesearchfield>false</userselectablesearchfield>
+            <columnnumber>0</columnnumber>
+            <backcolor>#f9f9f9ff</backcolor>
+            <forecolor>#000000ff</forecolor>
+            <databackcolor>#f5f5f5ff</databackcolor>
+            <dataforecolor>#000000ff</dataforecolor>
+            <gadgetmargin>0</gadgetmargin>
+            <gadgethideheader>false</gadgethideheader>
+            <gadgetscriptinglanguage>Recital</gadgetscriptinglanguage>
+            <gadgetfixedwidth>0</gadgetfixedwidth>
+            <gadgetfixedheight>0</gadgetfixedheight>
+            <refreshinterval>0</refreshinterval>
+            <captiongradient>false</captiongradient>
+            <captiongradienttype>0</captiongradienttype>
+            <captionfromcolor>#fafafaff</captionfromcolor>
+            <captiontocolor>#c0c0c0ff</captiontocolor>
+            <transparency>0</transparency>
+            <controltype>Editbox</controltype>
+            <datatype>C</datatype>
+            <toolbarvisible>false</toolbarvisible>
+            <applydictionary>true</applydictionary>
+            <captionfont>MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0</captionfont>
+            <datafont>MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0</datafont>
+            <labeltype>Above</labeltype>
+            <labelsize>Small</labelsize>
+            <shadingtype>None</shadingtype>
+            <transparencytype>None</transparencytype>
+            <labelwidth>160</labelwidth>
+            <canvasitemx>543</canvasitemx>
+            <canvasitemy>206</canvasitemy>
+            <canvasitemwidth>435</canvasitemwidth>
+            <canvasitemheight>67</canvasitemheight>
+            <controlcaption>Untitled editbox</controlcaption>
+            <controlanchor>0</controlanchor>
+            <controlanchorright>459</controlanchorright>
+            <controlanchorbottom>151</controlanchorbottom>
+            <controlstretch>true</controlstretch>
+            <richtext>false</richtext>
+            <taborder>0</taborder>
+            <backgroundwidget>false</backgroundwidget>
+            <dblclickaction>metadata_editor_entity_field1_dblclick&#40;&#41;</dblclickaction>
+            <gadgetinline>false</gadgetinline>
+            <gadgetstretchwidth>false</gadgetstretchwidth>
+            <treegroupbycolumns>-1</treegroupbycolumns>
+            <treechecklistmultiselect>true</treechecklistmultiselect>
+            <treeviewalternatingrowcolors>false</treeviewalternatingrowcolors>
+            <treeviewrowheight>0</treeviewrowheight>
+            <treeviewfontsize>0</treeviewfontsize>
+            <treeviewexpandall>false</treeviewexpandall>
+            <treeviewshowindicators>false</treeviewshowindicators>
+            <treeviewexpanddepth>0</treeviewexpanddepth>
+            <treeviewselectioncolumn>0</treeviewselectioncolumn>
+            <treeviewhidecolumnheaders>false</treeviewhidecolumnheaders>
+            <layoutcolumnnumber>-1</layoutcolumnnumber>
+        </formitem>
+        <formitem>
+            <id>field2</id>
+            <showcaption>true</showcaption>
+            <top>321</top>
+            <left>676</left>
+            <width>100</width>
+            <height>34</height>
+            <absoluteposition>false</absoluteposition>
+            <absolutepositiony>5</absolutepositiony>
+            <absolutepositionx>5</absolutepositionx>
+            <absolutepositionwidth>90</absolutepositionwidth>
+            <absolutepositionheight>24</absolutepositionheight>
+            <hidesearchkeyindicator>false</hidesearchkeyindicator>
+            <showdata>true</showdata>
+            <caption>Untitled</caption>
+            <captionborderwidth>0</captionborderwidth>
+            <captionbordercolor>#c0c0c0ff</captionbordercolor>
+            <captionalignment>LeftCenter</captionalignment>
+            <type>Field</type>
+            <password>false</password>
+            <mandatory>false</mandatory>
+            <mandatorybackcolor>#00fff8dc</mandatorybackcolor>
+            <returntabs>false</returntabs>
+            <dialogbutton>false</dialogbutton>
+            <canselectrows>true</canselectrows>
+            <autosuggestcolumn>0</autosuggestcolumn>
+            <autosuggestcolumnselect>0</autosuggestcolumnselect>
+            <searchfield>false</searchfield>
+            <readonly>false</readonly>
+            <editable>true</editable>
+            <refreshongridclick>false</refreshongridclick>
+            <relateonchange>false</relateonchange>
+            <refreshcalculatedonchange>false</refreshcalculatedonchange>
+            <defaultsearchfieldorder>false</defaultsearchfieldorder>
+            <userselectablesearchfield>false</userselectablesearchfield>
+            <columnnumber>0</columnnumber>
+            <backcolor>#f9f9f9ff</backcolor>
+            <forecolor>#000000ff</forecolor>
+            <databackcolor>#f5f5f5ff</databackcolor>
+            <dataforecolor>#000000ff</dataforecolor>
+            <gadgetmargin>0</gadgetmargin>
+            <gadgethideheader>false</gadgethideheader>
+            <gadgetscriptinglanguage>Recital</gadgetscriptinglanguage>
+            <gadgetfixedwidth>0</gadgetfixedwidth>
+            <gadgetfixedheight>0</gadgetfixedheight>
+            <refreshinterval>0</refreshinterval>
+            <captiongradient>false</captiongradient>
+            <captiongradienttype>0</captiongradienttype>
+            <captionfromcolor>#fafafaff</captionfromcolor>
+            <captiontocolor>#c0c0c0ff</captiontocolor>
+            <transparency>0</transparency>
+            <controltype>Commandbutton</controltype>
+            <datatype>C</datatype>
+            <toolbarvisible>true</toolbarvisible>
+            <applydictionary>true</applydictionary>
+            <captionfont>MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0</captionfont>
+            <datafont>MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0</datafont>
+            <labeltype>Beside</labeltype>
+            <labelsize>Small</labelsize>
+            <shadingtype>None</shadingtype>
+            <transparencytype>None</transparencytype>
+            <labelwidth>160</labelwidth>
+            <canvasitemx>676</canvasitemx>
+            <canvasitemy>321</canvasitemy>
+            <canvasitemwidth>100</canvasitemwidth>
+            <canvasitemheight>34</canvasitemheight>
+            <controlcaption>Untitled</controlcaption>
+            <controlanchor>0</controlanchor>
+            <controlanchorright>661</controlanchorright>
+            <controlanchorbottom>69</controlanchorbottom>
+            <controlstretch>true</controlstretch>
+            <richtext>false</richtext>
+            <taborder>0</taborder>
+            <backgroundwidget>false</backgroundwidget>
+            <clickaction>metadata_editor_entity_field2_click&#40;&#41;</clickaction>
+            <gadgetinline>false</gadgetinline>
+            <gadgetstretchwidth>false</gadgetstretchwidth>
+            <treegroupbycolumns>-1</treegroupbycolumns>
+            <treechecklistmultiselect>true</treechecklistmultiselect>
+            <treeviewalternatingrowcolors>false</treeviewalternatingrowcolors>
+            <treeviewrowheight>0</treeviewrowheight>
+            <treeviewfontsize>0</treeviewfontsize>
+            <treeviewexpandall>false</treeviewexpandall>
+            <treeviewshowindicators>false</treeviewshowindicators>
+            <treeviewexpanddepth>0</treeviewexpanddepth>
+            <treeviewselectioncolumn>0</treeviewselectioncolumn>
+            <treeviewhidecolumnheaders>false</treeviewhidecolumnheaders>
+            <layoutcolumnnumber>-1</layoutcolumnnumber>
+        </formitem>
+    </section>
+</page>
+<page>
+    <id>Model_Setup</id>
+    <title>Model Setup</title>
+    <backcolor>#ffffffff</backcolor>
+    <forecolor>#000000ff</forecolor>
+    <pagegradient>false</pagegradient>
+    <pagegradienttype>0</pagegradienttype>
+    <pagefromcolor>#fafafaff</pagefromcolor>
+    <pagetocolor>#c0c0c0ff</pagetocolor>
+    <searchboxminchars>1</searchboxminchars>
+    <headerbackcolor>#212121ff</headerbackcolor>
+    <headerforecolor>#ffffffff</headerforecolor>
+    <navigationpanelcollapseonload>false</navigationpanelcollapseonload>
+    <navigationpanelcollapsable>false</navigationpanelcollapsable>
+    <headerfromcolor>#c8c8c8ff</headerfromcolor>
+    <headertocolor>#000000ff</headertocolor>
+    <marginsize>0</marginsize>
+    <hidecustomsearchicon>true</hidecustomsearchicon>
+    <hidefullscreenicon>false</hidefullscreenicon>
+    <hidenotificationicon>false</hidenotificationicon>
+    <hideshareicon>true</hideshareicon>
+    <hidehomeicon>false</hidehomeicon>
+    <showoptionsbutton>false</showoptionsbutton>
+    <headerbottomborder>true</headerbottomborder>
+    <headerborderbottomcolor>#ffa500ff</headerborderbottomcolor>
+    <leftsidebartreecaptionheight>26</leftsidebartreecaptionheight>
+    <leftsidebarbackcolor>#f9f9f9ff</leftsidebarbackcolor>
+    <leftsidebarforecolor>#000000ff</leftsidebarforecolor>
+    <leftsidebarbordercolor>#e0ecffff</leftsidebarbordercolor>
+    <rightsidebarbackcolor>#f9f9f9ff</rightsidebarbackcolor>
+    <rightsidebarforecolor>#000000ff</rightsidebarforecolor>
+    <rightsidebarbordercolor>#e0ecffff</rightsidebarbordercolor>
+    <alwayssaveinpagelibrary>false</alwayssaveinpagelibrary>
+    <leftsidebarimagevisible>false</leftsidebarimagevisible>
+    <hideheadericon>true</hideheadericon>
+    <hidesearchbox>false</hidesearchbox>
+    <timerinterval>0</timerinterval>
+    <stretch>false</stretch>
+    <stretchlastsectionatruntime>false</stretchlastsectionatruntime>
+    <scrollbarvisibleatruntime>true</scrollbarvisibleatruntime>
+    <usescrollbarminheight>0</usescrollbarminheight>
+    <headervisible>true</headervisible>
+    <headerheight>40</headerheight>
+    <headercaption>Model Setup</headercaption>
+    <refreshwhenactivated>false</refreshwhenactivated>
+    <headergradient>true</headergradient>
+    <headergradienttype>0</headergradienttype>
+    <leftsidebarvisible>true</leftsidebarvisible>
+    <leftsidebartreevisible>false</leftsidebartreevisible>
+    <leftsidebartreewidth>240</leftsidebartreewidth>
+    <leftsidebartreerowheight>0</leftsidebartreerowheight>
+    <leftsidebartreeshowchildindicators>false</leftsidebartreeshowchildindicators>
+    <leftsidebartreedoubleclick>true</leftsidebartreedoubleclick>
+    <leftsidebartreealternatingcolors>true</leftsidebartreealternatingcolors>
+    <leftsidebartreegridlines>false</leftsidebartreegridlines>
+    <navtreeactionbarvisible>false</navtreeactionbarvisible>
+    <leftsidebartreecaptionvisible>false</leftsidebartreecaptionvisible>
+    <navigationpanelposition>Left</navigationpanelposition>
+    <leftsidebartreeselectioncolumn>0</leftsidebartreeselectioncolumn>
+    <leftsidebartreecaption>Navigation Panel</leftsidebartreecaption>
+    <leftsidebartreefontsize>0</leftsidebartreefontsize>
+    <rightsidebarvisible>false</rightsidebarvisible>
+    <hideactionbaratruntime>false</hideactionbaratruntime>
+    <syncactionbar>true</syncactionbar>
+    <leftsidebarloginpanelvisible>true</leftsidebarloginpanelvisible>
+    <leftsidebarappsvisible>false</leftsidebarappsvisible>
+    <leftsidebarwidth>240</leftsidebarwidth>
+    <rightsidebarwidth>160</rightsidebarwidth>
+    <leftsidebarappsheadervisible>true</leftsidebarappsheadervisible>
+    <leftsidebaritemsvisible>true</leftsidebaritemsvisible>
+    <leftsidebarmenuvisible>true</leftsidebarmenuvisible>
+    <leftsidebarfavoriteitems>0</leftsidebarfavoriteitems>
+    <leftsidebarrecentlyvieweditems>10</leftsidebarrecentlyvieweditems>
+    <leftsidebarrecentlymodifieditems>10</leftsidebarrecentlymodifieditems>
+    <leftsidebarwatcheditems>0</leftsidebarwatcheditems>
+    <leftsidebarrefreshinterval>0</leftsidebarrefreshinterval>
+    <rightsidebarcustomgadgetvisible>false</rightsidebarcustomgadgetvisible>
+    <rightsidebarcustomgadgetexpanded>false</rightsidebarcustomgadgetexpanded>
+    <rightsidebarcustomgadgetcaption>Untitled</rightsidebarcustomgadgetcaption>
+    <rightsidebarcustomgadgetheight>200</rightsidebarcustomgadgetheight>
+    <rightsidebarcustomgadgetrefreshinterval>0</rightsidebarcustomgadgetrefreshinterval>
+    <rightsidebarcustomgadgetstretch>false</rightsidebarcustomgadgetstretch>
+    <rightsidebarcontentinterval1>0</rightsidebarcontentinterval1>
+    <rightsidebarcontentinterval2>0</rightsidebarcontentinterval2>
+    <rightsidebarcontentinterval3>0</rightsidebarcontentinterval3>
+    <rightsidebarcontentinterval4>0</rightsidebarcontentinterval4>
+    <rightsidebarcontentvisible1>true</rightsidebarcontentvisible1>
+    <rightsidebarcontentvisible2>true</rightsidebarcontentvisible2>
+    <rightsidebarcontentvisible3>true</rightsidebarcontentvisible3>
+    <rightsidebarcontentvisible4>true</rightsidebarcontentvisible4>
+    <rightsidebarcontentexpanded1>true</rightsidebarcontentexpanded1>
+    <rightsidebarcontentexpanded2>true</rightsidebarcontentexpanded2>
+    <rightsidebarcontentexpanded3>true</rightsidebarcontentexpanded3>
+    <rightsidebarcontentexpanded4>true</rightsidebarcontentexpanded4>
+    <rightsidebarcontentheight1>140</rightsidebarcontentheight1>
+    <rightsidebarcontentheight2>140</rightsidebarcontentheight2>
+    <rightsidebarcontentheight3>140</rightsidebarcontentheight3>
+    <rightsidebarcontentheight4>140</rightsidebarcontentheight4>
+    <transparency>0</transparency>
+    <accordionatruntime>false</accordionatruntime>
+    <useaccordiononlowres>false</useaccordiononlowres>
+    <useaccordiononlowresvalue>1024</useaccordiononlowresvalue>
+    <accordionstackatruntime>false</accordionstackatruntime>
+    <collapseleftsidebar>false</collapseleftsidebar>
+    <collapserightsidebar>false</collapserightsidebar>
+    <hidefrommenuatruntime>false</hidefrommenuatruntime>
+    <menuicon>:/images/forms</menuicon>
+    <scriptinglanguage>Inherit</scriptinglanguage>
+    <footervisible>false</footervisible>
+    <footerheight>40</footerheight>
+    <footercustomgadgetrefreshinterval>0</footercustomgadgetrefreshinterval>
+    <footergradient>false</footergradient>
+    <footergradienttype>1</footergradienttype>
+    <footerbackcolor>#f9f9f9ff</footerbackcolor>
+    <footerforecolor>#000000ff</footerforecolor>
+    <footerfromcolor>#2b2b2bff</footerfromcolor>
+    <footertocolor>#212121ff</footertocolor>
+    <gesturesenabled>false</gesturesenabled>
+    <desktopui>true</desktopui>
+    <webui>true</webui>
+    <mobileui>true</mobileui>
+</page>
+<page>
+    <id>ERD4Lianja_Setup</id>
+    <title>ERD4Lianja Setup</title>
+    <backcolor>#ffffffff</backcolor>
+    <forecolor>#000000ff</forecolor>
+    <pagegradient>false</pagegradient>
+    <pagegradienttype>0</pagegradienttype>
+    <pagefromcolor>#fafafaff</pagefromcolor>
+    <pagetocolor>#c0c0c0ff</pagetocolor>
+    <searchboxminchars>1</searchboxminchars>
+    <headerbackcolor>#212121ff</headerbackcolor>
+    <headerforecolor>#ffffffff</headerforecolor>
+    <navigationpanelcollapseonload>false</navigationpanelcollapseonload>
+    <navigationpanelcollapsable>false</navigationpanelcollapsable>
+    <headerfromcolor>#c8c8c8ff</headerfromcolor>
+    <headertocolor>#000000ff</headertocolor>
+    <marginsize>0</marginsize>
+    <hidecustomsearchicon>true</hidecustomsearchicon>
+    <hidefullscreenicon>false</hidefullscreenicon>
+    <hidenotificationicon>false</hidenotificationicon>
+    <hideshareicon>true</hideshareicon>
+    <hidehomeicon>false</hidehomeicon>
+    <showoptionsbutton>false</showoptionsbutton>
+    <headerbottomborder>true</headerbottomborder>
+    <headerborderbottomcolor>#ffa500ff</headerborderbottomcolor>
+    <leftsidebartreecaptionheight>26</leftsidebartreecaptionheight>
+    <leftsidebarbackcolor>#f9f9f9ff</leftsidebarbackcolor>
+    <leftsidebarforecolor>#000000ff</leftsidebarforecolor>
+    <leftsidebarbordercolor>#e0ecffff</leftsidebarbordercolor>
+    <rightsidebarbackcolor>#f9f9f9ff</rightsidebarbackcolor>
+    <rightsidebarforecolor>#000000ff</rightsidebarforecolor>
+    <rightsidebarbordercolor>#e0ecffff</rightsidebarbordercolor>
+    <alwayssaveinpagelibrary>false</alwayssaveinpagelibrary>
+    <leftsidebarimagevisible>false</leftsidebarimagevisible>
+    <hideheadericon>true</hideheadericon>
+    <hidesearchbox>false</hidesearchbox>
+    <timerinterval>0</timerinterval>
+    <stretch>false</stretch>
+    <stretchlastsectionatruntime>false</stretchlastsectionatruntime>
+    <scrollbarvisibleatruntime>true</scrollbarvisibleatruntime>
+    <usescrollbarminheight>0</usescrollbarminheight>
+    <headervisible>true</headervisible>
+    <headerheight>40</headerheight>
+    <headercaption>ERD4Lianja Setup</headercaption>
+    <refreshwhenactivated>false</refreshwhenactivated>
+    <headergradient>true</headergradient>
+    <headergradienttype>0</headergradienttype>
+    <leftsidebarvisible>true</leftsidebarvisible>
+    <leftsidebartreevisible>false</leftsidebartreevisible>
+    <leftsidebartreewidth>240</leftsidebartreewidth>
+    <leftsidebartreerowheight>0</leftsidebartreerowheight>
+    <leftsidebartreeshowchildindicators>false</leftsidebartreeshowchildindicators>
+    <leftsidebartreedoubleclick>true</leftsidebartreedoubleclick>
+    <leftsidebartreealternatingcolors>true</leftsidebartreealternatingcolors>
+    <leftsidebartreegridlines>false</leftsidebartreegridlines>
+    <navtreeactionbarvisible>false</navtreeactionbarvisible>
+    <leftsidebartreecaptionvisible>false</leftsidebartreecaptionvisible>
+    <navigationpanelposition>Left</navigationpanelposition>
+    <leftsidebartreeselectioncolumn>0</leftsidebartreeselectioncolumn>
+    <leftsidebartreecaption>Navigation Panel</leftsidebartreecaption>
+    <leftsidebartreefontsize>0</leftsidebartreefontsize>
+    <rightsidebarvisible>false</rightsidebarvisible>
+    <hideactionbaratruntime>false</hideactionbaratruntime>
+    <syncactionbar>true</syncactionbar>
+    <leftsidebarloginpanelvisible>true</leftsidebarloginpanelvisible>
+    <leftsidebarappsvisible>false</leftsidebarappsvisible>
+    <leftsidebarwidth>240</leftsidebarwidth>
+    <rightsidebarwidth>160</rightsidebarwidth>
+    <leftsidebarappsheadervisible>true</leftsidebarappsheadervisible>
+    <leftsidebaritemsvisible>true</leftsidebaritemsvisible>
+    <leftsidebarmenuvisible>true</leftsidebarmenuvisible>
+    <leftsidebarfavoriteitems>0</leftsidebarfavoriteitems>
+    <leftsidebarrecentlyvieweditems>10</leftsidebarrecentlyvieweditems>
+    <leftsidebarrecentlymodifieditems>10</leftsidebarrecentlymodifieditems>
+    <leftsidebarwatcheditems>0</leftsidebarwatcheditems>
+    <leftsidebarrefreshinterval>0</leftsidebarrefreshinterval>
+    <rightsidebarcustomgadgetvisible>false</rightsidebarcustomgadgetvisible>
+    <rightsidebarcustomgadgetexpanded>false</rightsidebarcustomgadgetexpanded>
+    <rightsidebarcustomgadgetcaption>Untitled</rightsidebarcustomgadgetcaption>
+    <rightsidebarcustomgadgetheight>200</rightsidebarcustomgadgetheight>
+    <rightsidebarcustomgadgetrefreshinterval>0</rightsidebarcustomgadgetrefreshinterval>
+    <rightsidebarcustomgadgetstretch>false</rightsidebarcustomgadgetstretch>
+    <rightsidebarcontentinterval1>0</rightsidebarcontentinterval1>
+    <rightsidebarcontentinterval2>0</rightsidebarcontentinterval2>
+    <rightsidebarcontentinterval3>0</rightsidebarcontentinterval3>
+    <rightsidebarcontentinterval4>0</rightsidebarcontentinterval4>
+    <rightsidebarcontentvisible1>true</rightsidebarcontentvisible1>
+    <rightsidebarcontentvisible2>true</rightsidebarcontentvisible2>
+    <rightsidebarcontentvisible3>true</rightsidebarcontentvisible3>
+    <rightsidebarcontentvisible4>true</rightsidebarcontentvisible4>
+    <rightsidebarcontentexpanded1>true</rightsidebarcontentexpanded1>
+    <rightsidebarcontentexpanded2>true</rightsidebarcontentexpanded2>
+    <rightsidebarcontentexpanded3>true</rightsidebarcontentexpanded3>
+    <rightsidebarcontentexpanded4>true</rightsidebarcontentexpanded4>
+    <rightsidebarcontentheight1>140</rightsidebarcontentheight1>
+    <rightsidebarcontentheight2>140</rightsidebarcontentheight2>
+    <rightsidebarcontentheight3>140</rightsidebarcontentheight3>
+    <rightsidebarcontentheight4>140</rightsidebarcontentheight4>
+    <transparency>0</transparency>
+    <accordionatruntime>false</accordionatruntime>
+    <useaccordiononlowres>false</useaccordiononlowres>
+    <useaccordiononlowresvalue>1024</useaccordiononlowresvalue>
+    <accordionstackatruntime>false</accordionstackatruntime>
+    <collapseleftsidebar>false</collapseleftsidebar>
+    <collapserightsidebar>false</collapserightsidebar>
+    <hidefrommenuatruntime>false</hidefrommenuatruntime>
+    <menuicon>:/images/forms</menuicon>
+    <scriptinglanguage>Inherit</scriptinglanguage>
+    <footervisible>false</footervisible>
+    <footerheight>40</footerheight>
+    <footercustomgadgetrefreshinterval>0</footercustomgadgetrefreshinterval>
+    <footergradient>false</footergradient>
+    <footergradienttype>1</footergradienttype>
+    <footerbackcolor>#f9f9f9ff</footerbackcolor>
+    <footerforecolor>#000000ff</footerforecolor>
+    <footerfromcolor>#2b2b2bff</footerfromcolor>
+    <footertocolor>#212121ff</footertocolor>
+    <gesturesenabled>false</gesturesenabled>
+    <desktopui>true</desktopui>
+    <webui>true</webui>
+    <mobileui>true</mobileui>
+</page>
+<page>
+    <id>Data_Designer</id>
+    <title>Data Designer</title>
+    <backcolor>#ffffffff</backcolor>
+    <forecolor>#000000ff</forecolor>
+    <pagegradient>false</pagegradient>
+    <pagegradienttype>0</pagegradienttype>
+    <pagefromcolor>#fafafaff</pagefromcolor>
+    <pagetocolor>#c0c0c0ff</pagetocolor>
+    <searchboxminchars>1</searchboxminchars>
+    <headerbackcolor>#212121ff</headerbackcolor>
+    <headerforecolor>#ffffffff</headerforecolor>
+    <navigationpanelcollapseonload>false</navigationpanelcollapseonload>
+    <navigationpanelcollapsable>false</navigationpanelcollapsable>
+    <headerfromcolor>#c8c8c8ff</headerfromcolor>
+    <headertocolor>#000000ff</headertocolor>
+    <marginsize>0</marginsize>
+    <hidecustomsearchicon>true</hidecustomsearchicon>
+    <hidefullscreenicon>false</hidefullscreenicon>
+    <hidenotificationicon>false</hidenotificationicon>
+    <hideshareicon>true</hideshareicon>
+    <hidehomeicon>false</hidehomeicon>
+    <showoptionsbutton>false</showoptionsbutton>
+    <headerbottomborder>true</headerbottomborder>
+    <headerborderbottomcolor>#ffa500ff</headerborderbottomcolor>
+    <leftsidebartreecaptionheight>26</leftsidebartreecaptionheight>
+    <leftsidebarbackcolor>#f9f9f9ff</leftsidebarbackcolor>
+    <leftsidebarforecolor>#000000ff</leftsidebarforecolor>
+    <leftsidebarbordercolor>#e0ecffff</leftsidebarbordercolor>
+    <rightsidebarbackcolor>#f9f9f9ff</rightsidebarbackcolor>
+    <rightsidebarforecolor>#000000ff</rightsidebarforecolor>
+    <rightsidebarbordercolor>#e0ecffff</rightsidebarbordercolor>
+    <alwayssaveinpagelibrary>false</alwayssaveinpagelibrary>
+    <leftsidebarimagevisible>false</leftsidebarimagevisible>
+    <hideheadericon>true</hideheadericon>
+    <hidesearchbox>false</hidesearchbox>
+    <timerinterval>0</timerinterval>
+    <stretch>false</stretch>
+    <stretchlastsectionatruntime>false</stretchlastsectionatruntime>
+    <scrollbarvisibleatruntime>true</scrollbarvisibleatruntime>
+    <usescrollbarminheight>0</usescrollbarminheight>
+    <headervisible>true</headervisible>
+    <headerheight>40</headerheight>
+    <headercaption>Data Designer</headercaption>
+    <refreshwhenactivated>false</refreshwhenactivated>
+    <headergradient>true</headergradient>
+    <headergradienttype>0</headergradienttype>
+    <leftsidebarvisible>true</leftsidebarvisible>
+    <leftsidebartreevisible>false</leftsidebartreevisible>
+    <leftsidebartreewidth>240</leftsidebartreewidth>
+    <leftsidebartreerowheight>0</leftsidebartreerowheight>
+    <leftsidebartreeshowchildindicators>false</leftsidebartreeshowchildindicators>
+    <leftsidebartreedoubleclick>true</leftsidebartreedoubleclick>
+    <leftsidebartreealternatingcolors>true</leftsidebartreealternatingcolors>
+    <leftsidebartreegridlines>false</leftsidebartreegridlines>
+    <navtreeactionbarvisible>false</navtreeactionbarvisible>
+    <leftsidebartreecaptionvisible>false</leftsidebartreecaptionvisible>
+    <navigationpanelposition>Left</navigationpanelposition>
+    <leftsidebartreeselectioncolumn>0</leftsidebartreeselectioncolumn>
+    <leftsidebartreecaption>Navigation Panel</leftsidebartreecaption>
+    <leftsidebartreefontsize>0</leftsidebartreefontsize>
+    <rightsidebarvisible>false</rightsidebarvisible>
+    <hideactionbaratruntime>false</hideactionbaratruntime>
+    <syncactionbar>true</syncactionbar>
+    <leftsidebarloginpanelvisible>true</leftsidebarloginpanelvisible>
+    <leftsidebarappsvisible>false</leftsidebarappsvisible>
+    <leftsidebarwidth>240</leftsidebarwidth>
+    <rightsidebarwidth>160</rightsidebarwidth>
+    <leftsidebarappsheadervisible>true</leftsidebarappsheadervisible>
+    <leftsidebaritemsvisible>true</leftsidebaritemsvisible>
+    <leftsidebarmenuvisible>true</leftsidebarmenuvisible>
+    <leftsidebarfavoriteitems>0</leftsidebarfavoriteitems>
+    <leftsidebarrecentlyvieweditems>10</leftsidebarrecentlyvieweditems>
+    <leftsidebarrecentlymodifieditems>10</leftsidebarrecentlymodifieditems>
+    <leftsidebarwatcheditems>0</leftsidebarwatcheditems>
+    <leftsidebarrefreshinterval>0</leftsidebarrefreshinterval>
+    <rightsidebarcustomgadgetvisible>false</rightsidebarcustomgadgetvisible>
+    <rightsidebarcustomgadgetexpanded>false</rightsidebarcustomgadgetexpanded>
+    <rightsidebarcustomgadgetcaption>Untitled</rightsidebarcustomgadgetcaption>
+    <rightsidebarcustomgadgetheight>200</rightsidebarcustomgadgetheight>
+    <rightsidebarcustomgadgetrefreshinterval>0</rightsidebarcustomgadgetrefreshinterval>
+    <rightsidebarcustomgadgetstretch>false</rightsidebarcustomgadgetstretch>
+    <rightsidebarcontentinterval1>0</rightsidebarcontentinterval1>
+    <rightsidebarcontentinterval2>0</rightsidebarcontentinterval2>
+    <rightsidebarcontentinterval3>0</rightsidebarcontentinterval3>
+    <rightsidebarcontentinterval4>0</rightsidebarcontentinterval4>
+    <rightsidebarcontentvisible1>true</rightsidebarcontentvisible1>
+    <rightsidebarcontentvisible2>true</rightsidebarcontentvisible2>
+    <rightsidebarcontentvisible3>true</rightsidebarcontentvisible3>
+    <rightsidebarcontentvisible4>true</rightsidebarcontentvisible4>
+    <rightsidebarcontentexpanded1>true</rightsidebarcontentexpanded1>
+    <rightsidebarcontentexpanded2>true</rightsidebarcontentexpanded2>
+    <rightsidebarcontentexpanded3>true</rightsidebarcontentexpanded3>
+    <rightsidebarcontentexpanded4>true</rightsidebarcontentexpanded4>
+    <rightsidebarcontentheight1>140</rightsidebarcontentheight1>
+    <rightsidebarcontentheight2>140</rightsidebarcontentheight2>
+    <rightsidebarcontentheight3>140</rightsidebarcontentheight3>
+    <rightsidebarcontentheight4>140</rightsidebarcontentheight4>
+    <transparency>0</transparency>
+    <accordionatruntime>false</accordionatruntime>
+    <useaccordiononlowres>false</useaccordiononlowres>
+    <useaccordiononlowresvalue>1024</useaccordiononlowresvalue>
+    <accordionstackatruntime>false</accordionstackatruntime>
+    <collapseleftsidebar>false</collapseleftsidebar>
+    <collapserightsidebar>false</collapserightsidebar>
+    <hidefrommenuatruntime>false</hidefrommenuatruntime>
+    <menuicon>:/images/forms</menuicon>
+    <scriptinglanguage>Inherit</scriptinglanguage>
+    <footervisible>false</footervisible>
+    <footerheight>40</footerheight>
+    <footercustomgadgetrefreshinterval>0</footercustomgadgetrefreshinterval>
+    <footergradient>false</footergradient>
+    <footergradienttype>1</footergradienttype>
+    <footerbackcolor>#f9f9f9ff</footerbackcolor>
+    <footerforecolor>#000000ff</footerforecolor>
+    <footerfromcolor>#2b2b2bff</footerfromcolor>
+    <footertocolor>#212121ff</footertocolor>
+    <gesturesenabled>false</gesturesenabled>
+    <desktopui>true</desktopui>
+    <webui>true</webui>
+    <mobileui>true</mobileui>
+</page>
+</app>
