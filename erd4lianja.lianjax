@@ -10,10 +10,11 @@
 <set-property name="appmaximize" value="0" />
 <set-property name="runtimeconnstr" value="" />
 <set-property name="apploginrequired" value="1" />
+<set-property name="appenableexternal" value="0" />
 <set-property name="appserverlocation" value="http://www.lianja.com" />
 <set-property name="appservertype" value="" />
 <set-property name="appserveruser" value="" />
-<set-property name="appserverdatabase" value="southwind" />
+<set-property name="appserverdatabase" value="erd4lianja" />
 <set-property name="appserverpassword" value="/root/.local/share/data//lianjadata/" />
 <set-property name="addblankformsection" value="false" />
 <set-property name="hideheaderbar" value="true" />
@@ -65,6 +66,10 @@
     <set-property name="pageid" value="Data_Designer" />
     <set-property name="caption" value="Data Designer" />
 </menubutton>
+<menubutton>
+    <set-property name="pageid" value="xcase_import" />
+    <set-property name="caption" value="xCase Import" />
+</menubutton>
 <page>
     <set-property name="id" value="metadata_editor" />
     <set-property name="title" value="Edit Metadata" />
@@ -103,7 +108,7 @@
     <set-property name="hidesearchbox" value="false" />
     <set-property name="timerinterval" value="0" />
     <set-property name="stretch" value="false" />
-    <set-property name="stretchlastsectionatruntime" value="false" />
+    <set-property name="stretchlastsectionatruntime" value="true" />
     <set-property name="scrollbarvisibleatruntime" value="true" />
     <set-property name="usescrollbarminheight" value="0" />
     <set-property name="headervisible" value="true" />
@@ -190,10 +195,10 @@
         <set-property name="id" value="entity" />
         <set-property name="title" value="Entity" />
         <set-property name="type" value="canvas" />
-        <set-property name="database" value="erd4psp" />
+        <set-property name="database" value="erd4lianja" />
         <set-property name="table" value="PENTITY" />
         <set-property name="filter" value="pentity.cpentity_pk = gcpentity_pk" />
-        <set-property name="height" value="469" />
+        <set-property name="height" value="157" />
         <set-property name="heightfixed" value="false" />
         <set-property name="cascadedeletes" value="false" />
         <set-property name="applydictionary" value="false" />
@@ -295,25 +300,25 @@
         <set-property name="reportreadmore" value="false" />
         <set-property name="reportreadmoresize" value="0" />
         <formitem>
-            <set-property name="id" value="field1" />
+            <set-property name="id" value="field3" />
             <set-property name="showcaption" value="true" />
-            <set-property name="top" value="206" />
-            <set-property name="left" value="543" />
-            <set-property name="width" value="435" />
-            <set-property name="height" value="67" />
+            <set-property name="top" value="27" />
+            <set-property name="left" value="16" />
+            <set-property name="width" value="330" />
+            <set-property name="height" value="34" />
             <set-property name="absoluteposition" value="false" />
             <set-property name="absolutepositiony" value="5" />
             <set-property name="absolutepositionx" value="5" />
-            <set-property name="absolutepositionwidth" value="425" />
-            <set-property name="absolutepositionheight" value="57" />
+            <set-property name="absolutepositionwidth" value="320" />
+            <set-property name="absolutepositionheight" value="25" />
             <set-property name="hidesearchkeyindicator" value="false" />
             <set-property name="showdata" value="true" />
-            <set-property name="caption" value="OnOpen" />
+            <set-property name="caption" value="CTABLENAME" />
             <set-property name="captionborderwidth" value="0" />
             <set-property name="captionbordercolor" value="#c0c0c0ff" />
             <set-property name="captionalignment" value="LeftCenter" />
             <set-property name="type" value="Field" />
-            <set-property name="controlsource" value="PENTITY.MONOPEN" />
+            <set-property name="controlsource" value="PENTITY.CTABLENAME" />
             <set-property name="password" value="false" />
             <set-property name="mandatory" value="false" />
             <set-property name="mandatorybackcolor" value="#00fff8dc" />
@@ -333,7 +338,7 @@
             <set-property name="columnnumber" value="0" />
             <set-property name="backcolor" value="#f9f9f9ff" />
             <set-property name="forecolor" value="#000000ff" />
-            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="databackcolor" value="#ffffffff" />
             <set-property name="dataforecolor" value="#000000ff" />
             <set-property name="gadgetmargin" value="0" />
             <set-property name="gadgethideheader" value="false" />
@@ -346,30 +351,29 @@
             <set-property name="captionfromcolor" value="#fafafaff" />
             <set-property name="captiontocolor" value="#c0c0c0ff" />
             <set-property name="transparency" value="0" />
-            <set-property name="controltype" value="Editbox" />
+            <set-property name="controltype" value="Textbox" />
             <set-property name="datatype" value="C" />
-            <set-property name="toolbarvisible" value="false" />
+            <set-property name="toolbarvisible" value="true" />
             <set-property name="applydictionary" value="true" />
             <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
             <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
-            <set-property name="labeltype" value="Above" />
+            <set-property name="labeltype" value="Beside" />
             <set-property name="labelsize" value="Small" />
             <set-property name="shadingtype" value="None" />
             <set-property name="transparencytype" value="None" />
             <set-property name="labelwidth" value="160" />
-            <set-property name="canvasitemx" value="543" />
-            <set-property name="canvasitemy" value="206" />
-            <set-property name="canvasitemwidth" value="435" />
-            <set-property name="canvasitemheight" value="67" />
-            <set-property name="controlcaption" value="Untitled editbox" />
+            <set-property name="canvasitemx" value="16" />
+            <set-property name="canvasitemy" value="27" />
+            <set-property name="canvasitemwidth" value="330" />
+            <set-property name="canvasitemheight" value="34" />
+            <set-property name="controlcaption" value="Untitled textbox" />
             <set-property name="controlanchor" value="0" />
-            <set-property name="controlanchorright" value="459" />
-            <set-property name="controlanchorbottom" value="151" />
+            <set-property name="controlanchorright" value="1091" />
+            <set-property name="controlanchorbottom" value="51" />
             <set-property name="controlstretch" value="true" />
             <set-property name="richtext" value="false" />
             <set-property name="taborder" value="0" />
             <set-property name="backgroundwidget" value="false" />
-            <set-property name="dblclickaction" value="metadata_editor_entity_field1_dblclick&#40;&#41;" />
             <set-property name="gadgetinline" value="false" />
             <set-property name="gadgetstretchwidth" value="false" />
             <set-property name="treegroupbycolumns" value="-1" />
@@ -385,24 +389,25 @@
             <set-property name="layoutcolumnnumber" value="-1" />
         </formitem>
         <formitem>
-            <set-property name="id" value="field2" />
+            <set-property name="id" value="field4" />
             <set-property name="showcaption" value="true" />
-            <set-property name="top" value="321" />
-            <set-property name="left" value="676" />
-            <set-property name="width" value="100" />
+            <set-property name="top" value="25" />
+            <set-property name="left" value="386" />
+            <set-property name="width" value="330" />
             <set-property name="height" value="34" />
             <set-property name="absoluteposition" value="false" />
             <set-property name="absolutepositiony" value="5" />
             <set-property name="absolutepositionx" value="5" />
-            <set-property name="absolutepositionwidth" value="90" />
-            <set-property name="absolutepositionheight" value="24" />
+            <set-property name="absolutepositionwidth" value="320" />
+            <set-property name="absolutepositionheight" value="25" />
             <set-property name="hidesearchkeyindicator" value="false" />
             <set-property name="showdata" value="true" />
-            <set-property name="caption" value="Untitled" />
+            <set-property name="caption" value="CDESCRIPTIVENAME" />
             <set-property name="captionborderwidth" value="0" />
             <set-property name="captionbordercolor" value="#c0c0c0ff" />
             <set-property name="captionalignment" value="LeftCenter" />
             <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PENTITY.CDESCRIPTIVENAME" />
             <set-property name="password" value="false" />
             <set-property name="mandatory" value="false" />
             <set-property name="mandatorybackcolor" value="#00fff8dc" />
@@ -422,7 +427,7 @@
             <set-property name="columnnumber" value="0" />
             <set-property name="backcolor" value="#f9f9f9ff" />
             <set-property name="forecolor" value="#000000ff" />
-            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="databackcolor" value="#ffffffff" />
             <set-property name="dataforecolor" value="#000000ff" />
             <set-property name="gadgetmargin" value="0" />
             <set-property name="gadgethideheader" value="false" />
@@ -435,7 +440,7 @@
             <set-property name="captionfromcolor" value="#fafafaff" />
             <set-property name="captiontocolor" value="#c0c0c0ff" />
             <set-property name="transparency" value="0" />
-            <set-property name="controltype" value="Commandbutton" />
+            <set-property name="controltype" value="Textbox" />
             <set-property name="datatype" value="C" />
             <set-property name="toolbarvisible" value="true" />
             <set-property name="applydictionary" value="true" />
@@ -446,19 +451,18 @@
             <set-property name="shadingtype" value="None" />
             <set-property name="transparencytype" value="None" />
             <set-property name="labelwidth" value="160" />
-            <set-property name="canvasitemx" value="676" />
-            <set-property name="canvasitemy" value="321" />
-            <set-property name="canvasitemwidth" value="100" />
+            <set-property name="canvasitemx" value="386" />
+            <set-property name="canvasitemy" value="25" />
+            <set-property name="canvasitemwidth" value="330" />
             <set-property name="canvasitemheight" value="34" />
-            <set-property name="controlcaption" value="Untitled" />
+            <set-property name="controlcaption" value="Untitled textbox" />
             <set-property name="controlanchor" value="0" />
-            <set-property name="controlanchorright" value="661" />
-            <set-property name="controlanchorbottom" value="69" />
+            <set-property name="controlanchorright" value="721" />
+            <set-property name="controlanchorbottom" value="53" />
             <set-property name="controlstretch" value="true" />
             <set-property name="richtext" value="false" />
             <set-property name="taborder" value="0" />
             <set-property name="backgroundwidget" value="false" />
-            <set-property name="clickaction" value="metadata_editor_entity_field2_click&#40;&#41;" />
             <set-property name="gadgetinline" value="false" />
             <set-property name="gadgetstretchwidth" value="false" />
             <set-property name="treegroupbycolumns" value="-1" />
@@ -473,6 +477,330 @@
             <set-property name="treeviewhidecolumnheaders" value="false" />
             <set-property name="layoutcolumnnumber" value="-1" />
         </formitem>
+    </section>
+    <section>
+        <set-property name="id" value="fields" />
+        <set-property name="title" value="Fields" />
+        <set-property name="type" value="grid" />
+        <set-property name="database" value="erd4lianja" />
+        <set-property name="table" value="PFIELD" />
+        <set-property name="height" value="536" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="false" />
+        <set-property name="autoresizegridcolumns" value="false" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="false" />
+        <set-property name="doubleclicktoedit" value="false" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="false" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="true" />
+        <set-property name="showprintbutton" value="true" />
+        <set-property name="showeditbutton" value="true" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="0" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="gridcolumnproperties" value="NORDER@=#ffffffff@=#000000ff@=NORDER@=@=@=@=@=false@=@=@=@=@=@=|CNAME@=#ffffffff@=#000000ff@=CNAME@=@=@=@=@=false@=@=@=@=@=@=|CPDOMAIN_FK@=#ffffffff@=#000000ff@=CPDOMAIN_FK@=@=@=@=@=false@=@=@=@=@=@=|CPDATATYPE_FK@=#ffffffff@=#000000ff@=CPDATATYPE_FK@=@=@=@=@=false@=@=@=@=@=@=|NLENGTH@=#ffffffff@=#000000ff@=NLENGTH@=@=@=@=@=false@=@=@=@=@=@=|NDECIMALS@=#ffffffff@=#000000ff@=NDECIMALS@=@=@=@=@=false@=@=@=@=@=@=|LUNSIGNED@=#ffffffff@=#000000ff@=LUNSIGNED@=@=@=@=@=false@=@=@=@=@=@=|LBINARY@=#ffffffff@=#000000ff@=LBINARY@=@=@=@=@=false@=@=@=@=@=@=|CDEFAULT@=#ffffffff@=#000000ff@=CDEFAULT@=@=@=@=@=false@=@=@=@=@=@=|CINPUTMASK@=#ffffffff@=#000000ff@=CINPUTMASK@=@=@=@=@=false@=@=@=@=@=@=|CPLACEHOLDER@=#ffffffff@=#000000ff@=CPLACEHOLDER@=@=@=@=@=false@=@=@=@=@=@=|LPASSWORDINPUT@=#ffffffff@=#000000ff@=LPASSWORDINPUT@=@=@=@=@=false@=@=@=@=@=@=|LRETURNTABS@=#ffffffff@=#000000ff@=LRETURNTABS@=@=@=@=@=false@=@=@=@=@=@=|CALLOWBLANKEXPR@=#ffffffff@=#000000ff@=CALLOWBLANKEXPR@=@=@=@=@=false@=@=@=@=@=@=|MCHOICES@=#ffffffff@=#000000ff@=MCHOICES@=@=@=@=@=false@=@=@=@=@=@=|CVALIDATION@=#ffffffff@=#000000ff@=CVALIDATION@=@=@=@=@=false@=@=@=@=@=@=|MERRORMESSAGE@=#ffffffff@=#000000ff@=MERRORMESSAGE@=@=@=@=@=false@=@=@=@=@=@=|MTOOLTIP@=#ffffffff@=#000000ff@=MTOOLTIP@=@=@=@=@=false@=@=@=@=@=@=|MAUTOSUGGEST@=#ffffffff@=#000000ff@=MAUTOSUGGEST@=@=@=@=@=false@=@=@=@=@=@=|MAUTOSUGGESTHEADERS@=#ffffffff@=#000000ff@=MAUTOSUGGESTHEADERS@=@=@=@=@=false@=@=@=@=@=@=|MAUTOSUGGESTSEARCHCOL@=#ffffffff@=#000000ff@=MAUTOSUGGESTSEARCHCOL@=@=@=@=@=false@=@=@=@=@=@=|LAUTOINCREMENT@=#ffffffff@=#000000ff@=LAUTOINCREMENT@=@=@=@=@=false@=@=@=@=@=@=|LAUTOINC@=#ffffffff@=#000000ff@=LAUTOINC@=@=@=@=@=false@=@=@=@=@=@=|NAUTOINCNEXTVALUE@=#ffffffff@=#000000ff@=NAUTOINCNEXTVALUE@=@=@=@=@=false@=@=@=@=@=@=|NAUTOINCSTEPVALUE@=#ffffffff@=#000000ff@=NAUTOINCSTEPVALUE@=@=@=@=@=false@=@=@=@=@=@=|MCALCULATEDEXPR@=#ffffffff@=#000000ff@=MCALCULATEDEXPR@=@=@=@=@=false@=@=@=@=@=@=|MCHECKEXPR@=#ffffffff@=#000000ff@=MCHECKEXPR@=@=@=@=@=false@=@=@=@=@=@=|MDBCHOICES@=#ffffffff@=#000000ff@=MDBCHOICES@=@=@=@=@=false@=@=@=@=@=@=|MDBDEFAULT@=#ffffffff@=#000000ff@=MDBDEFAULT@=@=@=@=@=false@=@=@=@=@=@=|CDBDESCRIPTION@=#ffffffff@=#000000ff@=CDBDESCRIPTION@=@=@=@=@=false@=@=@=@=@=@=|MDBERROR@=#ffffffff@=#000000ff@=MDBERROR@=@=@=@=@=false@=@=@=@=@=@=|LFOREIGNKEY@=#ffffffff@=#000000ff@=LFOREIGNKEY@=@=@=@=@=false@=@=@=@=@=@=|LNOCPTRANS@=#ffffffff@=#000000ff@=LNOCPTRANS@=@=@=@=@=false@=@=@=@=@=@=|LPRIMARYKEY@=#ffffffff@=#000000ff@=LPRIMARYKEY@=@=@=@=@=false@=@=@=@=@=@=|CRANGELOWEREXPR@=#ffffffff@=#000000ff@=CRANGELOWEREXPR@=@=@=@=@=false@=@=@=@=@=@=|CRANGEUPPEREXPR@=#ffffffff@=#000000ff@=CRANGEUPPEREXPR@=@=@=@=@=false@=@=@=@=@=@=|MREFERENCES@=#ffffffff@=#000000ff@=MREFERENCES@=@=@=@=@=false@=@=@=@=@=@=|MDBVALIDATION@=#ffffffff@=#000000ff@=MDBVALIDATION@=@=@=@=@=false@=@=@=@=@=@=|MFIELDINDEX@=#ffffffff@=#000000ff@=MFIELDINDEX@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="false" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="0" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
+    </section>
+    <section>
+        <set-property name="id" value="indexes" />
+        <set-property name="title" value="Indexes" />
+        <set-property name="type" value="grid" />
+        <set-property name="database" value="erd4lianja" />
+        <set-property name="table" value="PINDEX" />
+        <set-property name="height" value="200" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="false" />
+        <set-property name="autoresizegridcolumns" value="false" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="false" />
+        <set-property name="doubleclicktoedit" value="false" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="false" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="true" />
+        <set-property name="showprintbutton" value="true" />
+        <set-property name="showeditbutton" value="true" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="0" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="gridcolumnproperties" value="CPINDEX_PK@=#ffffffff@=#000000ff@=CPINDEX_PK@=@=@=@=@=false@=@=@=@=@=@=|CPENTITY_FK@=#ffffffff@=#000000ff@=CPENTITY_FK@=@=@=@=@=false@=@=@=@=@=@=|CINDEXNAME@=#ffffffff@=#000000ff@=CINDEXNAME@=@=@=@=@=false@=@=@=@=@=@=|MINDEXEXPR@=#ffffffff@=#000000ff@=MINDEXEXPR@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="false" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="0" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
+    </section>
+    <section>
+        <set-property name="id" value="relations" />
+        <set-property name="title" value="Relations" />
+        <set-property name="type" value="grid" />
+        <set-property name="database" value="erd4lianja" />
+        <set-property name="table" value="PRELATION" />
+        <set-property name="height" value="0" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="false" />
+        <set-property name="autoresizegridcolumns" value="false" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="true" />
+        <set-property name="doubleclicktoedit" value="false" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="false" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="true" />
+        <set-property name="showprintbutton" value="true" />
+        <set-property name="showeditbutton" value="true" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="0" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="gridcolumnproperties" value="CPRELATION_PK@=#ffffffff@=#000000ff@=CPRELATION_PK@=@=@=@=@=false@=@=@=@=@=@=|CPENTITY_FK_PARENT@=#ffffffff@=#000000ff@=CPENTITY_FK_PARENT@=@=@=@=@=false@=@=@=@=@=@=|CPENTITY_FK_CHILD@=#ffffffff@=#000000ff@=CPENTITY_FK_CHILD@=@=@=@=@=false@=@=@=@=@=@=|CPINDEX_FK_PARENT@=#ffffffff@=#000000ff@=CPINDEX_FK_PARENT@=@=@=@=@=false@=@=@=@=@=@=|CPINDEX_FK_CHILD@=#ffffffff@=#000000ff@=CPINDEX_FK_CHILD@=@=@=@=@=false@=@=@=@=@=@=|CCASCADERULE@=#ffffffff@=#000000ff@=CCASCADERULE@=@=@=@=@=false@=@=@=@=@=@=|LALLOWNULLFK@=#ffffffff@=#000000ff@=LALLOWNULLFK@=@=@=@=@=false@=@=@=@=@=@=|LONLYONECHILD@=#ffffffff@=#000000ff@=LONLYONECHILD@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=|@=#ffffffff@=#000000ff@=@=@=@=@=@=false@=@=@=@=@=@=" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="false" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="1" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
     </section>
 </page>
 <page>
@@ -596,6 +924,563 @@
     <set-property name="desktopui" value="true" />
     <set-property name="webui" value="true" />
     <set-property name="mobileui" value="true" />
+    <section>
+        <set-property name="id" value="section1" />
+        <set-property name="title" value="section1" />
+        <set-property name="type" value="form" />
+        <set-property name="database" value="erd4lianja" />
+        <set-property name="table" value="PMODEL" />
+        <set-property name="height" value="200" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="false" />
+        <set-property name="autoresizegridcolumns" value="false" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="false" />
+        <set-property name="doubleclicktoedit" value="false" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="false" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="true" />
+        <set-property name="showprintbutton" value="true" />
+        <set-property name="showeditbutton" value="true" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="1" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="false" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="false" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
+        <formitem>
+            <set-property name="id" value="field6" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="0" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="CPDATABASE_FK " />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PMODEL.CPDATABASE_FK" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="2" />
+            <set-property name="table" value="pmodel" />
+            <set-property name="column" value="CPDATABASE_FK" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+        <formitem>
+            <set-property name="id" value="field7" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="25" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="CMODELTITLE " />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PMODEL.CMODELTITLE" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="3" />
+            <set-property name="table" value="pmodel" />
+            <set-property name="column" value="CMODELTITLE" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+        <formitem>
+            <set-property name="id" value="field8" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="50" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="CPFKSTYLE " />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PMODEL.CPFKSTYLE" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="4" />
+            <set-property name="table" value="pmodel" />
+            <set-property name="column" value="CPFKSTYLE" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+        <formitem>
+            <set-property name="id" value="field9" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="75" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="CDEFAIULTPKGEN " />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PMODEL.CDEFAIULTPKGEN" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="5" />
+            <set-property name="table" value="pmodel" />
+            <set-property name="column" value="CDEFAIULTPKGEN" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+        <formitem>
+            <set-property name="id" value="field10" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="100" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="LDEFAULTNOCPTRANS " />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="PMODEL.LDEFAULTNOCPTRANS" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="6" />
+            <set-property name="table" value="pmodel" />
+            <set-property name="column" value="LDEFAULTNOCPTRANS" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="L" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+    </section>
 </page>
 <page>
     <set-property name="id" value="ERD4Lianja_Setup" />
@@ -718,6 +1603,114 @@
     <set-property name="desktopui" value="true" />
     <set-property name="webui" value="true" />
     <set-property name="mobileui" value="true" />
+    <section>
+        <set-property name="id" value="datatypes" />
+        <set-property name="title" value="Data Types" />
+        <set-property name="type" value="grid" />
+        <set-property name="database" value="erd4lianja" />
+        <set-property name="table" value="PDATATYPE" />
+        <set-property name="height" value="314" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="false" />
+        <set-property name="autoresizegridcolumns" value="true" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="false" />
+        <set-property name="doubleclicktoedit" value="true" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="false" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="true" />
+        <set-property name="showprintbutton" value="true" />
+        <set-property name="showeditbutton" value="false" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="0" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="gridcolumnproperties" value="Name@=#ffffffff@=#000000ff@=CLONGNAME@=@=@=@=@=false@=@=@=@=@=@=|Abbreviation@=#ffffffff@=#000000ff@=CABBREVIATION@=@=@=@=@=false@=@=@=@=@=@=|Uses Unsigned@=#ffffffff@=#000000ff@=LUSESUNSIGNED@=@=@=@=@=false@=@=@=@=@=@=|Uses Length@=#ffffffff@=#000000ff@=LUSESLENGTH@=@=@=@=@=false@=@=@=@=@=@=|Uses Decimal@=#ffffffff@=#000000ff@=LUSESDECIMAL@=@=@=@=@=false@=@=@=@=@=@=|Uses Precision@=#ffffffff@=#000000ff@=LUSESPRECISION@=@=@=@=@=false@=@=@=@=@=@=|Uses Scale@=#ffffffff@=#000000ff@=LUSESSCALE@=@=@=@=@=false@=@=@=@=@=@=|Uses Binary@=#ffffffff@=#000000ff@=LUSESBINARY@=@=@=@=@=false@=@=@=@=@=@=|Min Length@=#ffffffff@=#000000ff@=NMINLENGTH@=@=@=@=@=false@=@=@=@=@=@=|Max Length@=#ffffffff@=#000000ff@=NMAXLENGTH@=@=@=@=@=false@=@=@=@=@=@=|Order@=#ffffffff@=#000000ff@=NDISPLAYORDER@=@=@=@=@=false@=seqno&#40;&#41;@=@=@=@=@=" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="false" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="1" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
+    </section>
 </page>
 <page>
     <set-property name="id" value="Data_Designer" />
@@ -840,5 +1833,413 @@
     <set-property name="desktopui" value="true" />
     <set-property name="webui" value="true" />
     <set-property name="mobileui" value="true" />
+</page>
+<page>
+    <set-property name="id" value="xcase_import" />
+    <set-property name="title" value="xCase Import" />
+    <set-property name="backcolor" value="#ffffffff" />
+    <set-property name="forecolor" value="#000000ff" />
+    <set-property name="pagegradient" value="false" />
+    <set-property name="pagegradienttype" value="0" />
+    <set-property name="pagefromcolor" value="#fafafaff" />
+    <set-property name="pagetocolor" value="#c0c0c0ff" />
+    <set-property name="searchboxminchars" value="1" />
+    <set-property name="headerbackcolor" value="#212121ff" />
+    <set-property name="headerforecolor" value="#ffffffff" />
+    <set-property name="navigationpanelcollapseonload" value="false" />
+    <set-property name="navigationpanelcollapsable" value="false" />
+    <set-property name="headerfromcolor" value="#c8c8c8ff" />
+    <set-property name="headertocolor" value="#000000ff" />
+    <set-property name="marginsize" value="0" />
+    <set-property name="hidecustomsearchicon" value="true" />
+    <set-property name="hidefullscreenicon" value="false" />
+    <set-property name="hidenotificationicon" value="false" />
+    <set-property name="hideshareicon" value="true" />
+    <set-property name="hidehomeicon" value="false" />
+    <set-property name="showoptionsbutton" value="false" />
+    <set-property name="headerbottomborder" value="true" />
+    <set-property name="headerborderbottomcolor" value="#ffa500ff" />
+    <set-property name="leftsidebartreecaptionheight" value="26" />
+    <set-property name="leftsidebarbackcolor" value="#f9f9f9ff" />
+    <set-property name="leftsidebarforecolor" value="#000000ff" />
+    <set-property name="leftsidebarbordercolor" value="#e0ecffff" />
+    <set-property name="rightsidebarbackcolor" value="#f9f9f9ff" />
+    <set-property name="rightsidebarforecolor" value="#000000ff" />
+    <set-property name="rightsidebarbordercolor" value="#e0ecffff" />
+    <set-property name="alwayssaveinpagelibrary" value="false" />
+    <set-property name="leftsidebarimagevisible" value="false" />
+    <set-property name="hideheadericon" value="true" />
+    <set-property name="hidesearchbox" value="false" />
+    <set-property name="timerinterval" value="0" />
+    <set-property name="stretch" value="false" />
+    <set-property name="stretchlastsectionatruntime" value="false" />
+    <set-property name="scrollbarvisibleatruntime" value="true" />
+    <set-property name="usescrollbarminheight" value="0" />
+    <set-property name="headervisible" value="true" />
+    <set-property name="headerheight" value="40" />
+    <set-property name="headercaption" value="Import xCase VFP Model" />
+    <set-property name="refreshwhenactivated" value="false" />
+    <set-property name="headergradient" value="true" />
+    <set-property name="headergradienttype" value="0" />
+    <set-property name="leftsidebarvisible" value="true" />
+    <set-property name="leftsidebartreevisible" value="false" />
+    <set-property name="leftsidebartreewidth" value="240" />
+    <set-property name="leftsidebartreerowheight" value="0" />
+    <set-property name="leftsidebartreeshowchildindicators" value="false" />
+    <set-property name="leftsidebartreedoubleclick" value="true" />
+    <set-property name="leftsidebartreealternatingcolors" value="true" />
+    <set-property name="leftsidebartreegridlines" value="false" />
+    <set-property name="navtreeactionbarvisible" value="false" />
+    <set-property name="leftsidebartreecaptionvisible" value="false" />
+    <set-property name="navigationpanelposition" value="Left" />
+    <set-property name="leftsidebartreeselectioncolumn" value="0" />
+    <set-property name="leftsidebartreecaption" value="Navigation Panel" />
+    <set-property name="leftsidebartreefontsize" value="0" />
+    <set-property name="rightsidebarvisible" value="false" />
+    <set-property name="hideactionbaratruntime" value="false" />
+    <set-property name="syncactionbar" value="true" />
+    <set-property name="leftsidebarloginpanelvisible" value="true" />
+    <set-property name="leftsidebarappsvisible" value="false" />
+    <set-property name="leftsidebarwidth" value="240" />
+    <set-property name="rightsidebarwidth" value="160" />
+    <set-property name="leftsidebarappsheadervisible" value="true" />
+    <set-property name="leftsidebaritemsvisible" value="true" />
+    <set-property name="leftsidebarmenuvisible" value="true" />
+    <set-property name="leftsidebarfavoriteitems" value="0" />
+    <set-property name="leftsidebarrecentlyvieweditems" value="10" />
+    <set-property name="leftsidebarrecentlymodifieditems" value="10" />
+    <set-property name="leftsidebarwatcheditems" value="0" />
+    <set-property name="leftsidebarrefreshinterval" value="0" />
+    <set-property name="rightsidebarcustomgadgetvisible" value="false" />
+    <set-property name="rightsidebarcustomgadgetexpanded" value="false" />
+    <set-property name="rightsidebarcustomgadgetcaption" value="Untitled" />
+    <set-property name="rightsidebarcustomgadgetheight" value="200" />
+    <set-property name="rightsidebarcustomgadgetrefreshinterval" value="0" />
+    <set-property name="rightsidebarcustomgadgetstretch" value="false" />
+    <set-property name="rightsidebarcontentinterval1" value="0" />
+    <set-property name="rightsidebarcontentinterval2" value="0" />
+    <set-property name="rightsidebarcontentinterval3" value="0" />
+    <set-property name="rightsidebarcontentinterval4" value="0" />
+    <set-property name="rightsidebarcontentvisible1" value="true" />
+    <set-property name="rightsidebarcontentvisible2" value="true" />
+    <set-property name="rightsidebarcontentvisible3" value="true" />
+    <set-property name="rightsidebarcontentvisible4" value="true" />
+    <set-property name="rightsidebarcontentexpanded1" value="true" />
+    <set-property name="rightsidebarcontentexpanded2" value="true" />
+    <set-property name="rightsidebarcontentexpanded3" value="true" />
+    <set-property name="rightsidebarcontentexpanded4" value="true" />
+    <set-property name="rightsidebarcontentheight1" value="140" />
+    <set-property name="rightsidebarcontentheight2" value="140" />
+    <set-property name="rightsidebarcontentheight3" value="140" />
+    <set-property name="rightsidebarcontentheight4" value="140" />
+    <set-property name="transparency" value="0" />
+    <set-property name="accordionatruntime" value="false" />
+    <set-property name="useaccordiononlowres" value="false" />
+    <set-property name="useaccordiononlowresvalue" value="1024" />
+    <set-property name="accordionstackatruntime" value="false" />
+    <set-property name="collapseleftsidebar" value="false" />
+    <set-property name="collapserightsidebar" value="false" />
+    <set-property name="hidefrommenuatruntime" value="false" />
+    <set-property name="menuicon" value=":/images/forms" />
+    <set-property name="scriptinglanguage" value="Inherit" />
+    <set-property name="customlibrary" value="lib_xcase_import.prg" />
+    <set-property name="footervisible" value="false" />
+    <set-property name="footerheight" value="40" />
+    <set-property name="footercustomgadgetrefreshinterval" value="0" />
+    <set-property name="footergradient" value="false" />
+    <set-property name="footergradienttype" value="1" />
+    <set-property name="footerbackcolor" value="#f9f9f9ff" />
+    <set-property name="footerforecolor" value="#000000ff" />
+    <set-property name="footerfromcolor" value="#2b2b2bff" />
+    <set-property name="footertocolor" value="#212121ff" />
+    <set-property name="initaction" value="xcase_import_init&#40;&#41;" />
+    <set-property name="activateaction" value="xcase_import_activate&#40;&#41;" />
+    <set-property name="gesturesenabled" value="false" />
+    <set-property name="desktopui" value="true" />
+    <set-property name="webui" value="true" />
+    <set-property name="mobileui" value="true" />
+    <section>
+        <set-property name="id" value="xcaseimport_setup" />
+        <set-property name="title" value="Perform Import" />
+        <set-property name="type" value="form" />
+        <set-property name="height" value="200" />
+        <set-property name="heightfixed" value="false" />
+        <set-property name="cascadedeletes" value="false" />
+        <set-property name="applydictionary" value="false" />
+        <set-property name="customoptionsmenu" value="!&amp;Import" />
+        <set-property name="timelinesenabled" value="false" />
+        <set-property name="backcolor" value="#f9f9f9ff" />
+        <set-property name="forecolor" value="#000000ff" />
+        <set-property name="footerbackcolor" value="#efefefff" />
+        <set-property name="footerforecolor" value="#aaaaaaff" />
+        <set-property name="headergradient" value="false" />
+        <set-property name="headergradienttype" value="1" />
+        <set-property name="headerfromcolor" value="#fafafaff" />
+        <set-property name="headertocolor" value="#d6d6d6ff" />
+        <set-property name="headerbackcolor" value="#00fafafa" />
+        <set-property name="headerforecolor" value="#808080ff" />
+        <set-property name="gridbackcolor" value="#f9f9f9ff" />
+        <set-property name="gridforecolor" value="#000000ff" />
+        <set-property name="sectiongradient" value="false" />
+        <set-property name="sectiongradienttype" value="0" />
+        <set-property name="sectionfromcolor" value="#fafafaff" />
+        <set-property name="sectiontocolor" value="#c0c0c0ff" />
+        <set-property name="hideheaderatruntime" value="false" />
+        <set-property name="hidenavbuttons" value="true" />
+        <set-property name="autoresizegridcolumns" value="false" />
+        <set-property name="autostretchgridcolumns" value="true" />
+        <set-property name="readonly" value="false" />
+        <set-property name="doubleclicktoedit" value="false" />
+        <set-property name="showsplitedit" value="false" />
+        <set-property name="showgridmemos" value="false" />
+        <set-property name="scrollbar" value="true" />
+        <set-property name="returntabs" value="false" />
+        <set-property name="collapsableatruntime" value="true" />
+        <set-property name="excludeaccordionatruntime" value="false" />
+        <set-property name="hideactionbaratruntime" value="true" />
+        <set-property name="showokcancelbuttons" value="true" />
+        <set-property name="showadddeletebuttons" value="false" />
+        <set-property name="showprintbutton" value="false" />
+        <set-property name="showeditbutton" value="true" />
+        <set-property name="resizableatruntime" value="false" />
+        <set-property name="spacervisible" value="false" />
+        <set-property name="columncount" value="1" />
+        <set-property name="stretch" value="false" />
+        <set-property name="margin" value="0" />
+        <set-property name="spacing" value="0" />
+        <set-property name="borderradius" value="0" />
+        <set-property name="transparency" value="0" />
+        <set-property name="labelwidth" value="160" />
+        <set-property name="showgrid" value="true" />
+        <set-property name="hidesearchicon" value="false" />
+        <set-property name="hidecustomsearchicon" value="true" />
+        <set-property name="showhelpicon" value="false" />
+        <set-property name="showinfotipsicon" value="false" />
+        <set-property name="minimumheight" value="0" />
+        <set-property name="sectionmenuvisible" value="false" />
+        <set-property name="sectionmenuheight" value="20" />
+        <set-property name="sectionmenubackcolor" value="#333333ff" />
+        <set-property name="sectionmenuforecolor" value="#bababaff" />
+        <set-property name="headerfontsize" value="8" />
+        <set-property name="footervisible" value="true" />
+        <set-property name="autorelatechildsection" value="true" />
+        <set-property name="hideformnavbar" value="false" />
+        <set-property name="refreshinterval" value="0" />
+        <set-property name="showwhenloggedin" value="true" />
+        <set-property name="showwhenloggedout" value="true" />
+        <set-property name="gridreadonly" value="false" />
+        <set-property name="splitbar" value="false" />
+        <set-property name="showgridokcancelbuttons" value="true" />
+        <set-property name="showgridactionbar" value="true" />
+        <set-property name="gridrowheight" value="22" />
+        <set-property name="tabcount" value="0" />
+        <set-property name="tabmargin" value="10" />
+        <set-property name="tabbackcolor" value="#e0ecffff" />
+        <set-property name="tabforecolor" value="#000080ff" />
+        <set-property name="delegatehyperlinks" value="false" />
+        <set-property name="scriptinglanguage" value="Inherit" />
+        <set-property name="customlibrary" value="lib_xcase_import_xcaseimport_setup.prg" />
+        <set-property name="webvieweditable" value="false" />
+        <set-property name="editonclick" value="false" />
+        <set-property name="editondoubleclick" value="false" />
+        <set-property name="readyaction" value="xcase_import_xcaseimport_setup_ready" />
+        <set-property name="reportgridlines" value="false" />
+        <set-property name="calendartitlecolumn" value="eventtitle" />
+        <set-property name="calendarstartdatetimecolumn" value="eventstart" />
+        <set-property name="calendarenddatetimecolumn" value="eventend" />
+        <set-property name="calendaralldaycolumn" value="eventallday" />
+        <set-property name="calendarrepeatingcolumn" value="eventrepeat" />
+        <set-property name="calendareventtypecolumn" value="eventtype" />
+        <set-property name="desktopui" value="true" />
+        <set-property name="webui" value="true" />
+        <set-property name="mobileui" value="true" />
+        <set-property name="gesturesenabled" value="false" />
+        <set-property name="imagestripdetailsvisible" value="false" />
+        <set-property name="imagestripdetailsbackcolor" value="black" />
+        <set-property name="imagestripdetailsforecolor" value="white" />
+        <set-property name="hidetabbaratruntime" value="false" />
+        <set-property name="reportimagewidth" value="0" />
+        <set-property name="reportimageheight" value="0" />
+        <set-property name="reportcellwidth" value="0" />
+        <set-property name="reportcellheight" value="0" />
+        <set-property name="reporttablecolumns" value="1" />
+        <set-property name="reportreadmore" value="false" />
+        <set-property name="reportreadmoresize" value="0" />
+        <formitem>
+            <set-property name="id" value="field33" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="0" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Spacer" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="false" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="true" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="0" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#f9f9f9ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+        <formitem>
+            <set-property name="id" value="txtModelDir" />
+            <set-property name="showcaption" value="true" />
+            <set-property name="top" value="0" />
+            <set-property name="left" value="0" />
+            <set-property name="width" value="0" />
+            <set-property name="height" value="0" />
+            <set-property name="absoluteposition" value="false" />
+            <set-property name="absolutepositiony" value="0" />
+            <set-property name="absolutepositionx" value="0" />
+            <set-property name="absolutepositionwidth" value="1205" />
+            <set-property name="absolutepositionheight" value="25" />
+            <set-property name="hidesearchkeyindicator" value="false" />
+            <set-property name="showdata" value="true" />
+            <set-property name="caption" value="xCase Model Directory" />
+            <set-property name="captionborderwidth" value="0" />
+            <set-property name="captionbordercolor" value="#c0c0c0ff" />
+            <set-property name="captionalignment" value="LeftCenter" />
+            <set-property name="type" value="Field" />
+            <set-property name="controlsource" value="m.cXcaseModelDir" />
+            <set-property name="password" value="false" />
+            <set-property name="mandatory" value="false" />
+            <set-property name="mandatorybackcolor" value="#00fff8dc" />
+            <set-property name="returntabs" value="false" />
+            <set-property name="dialogbutton" value="true" />
+            <set-property name="canselectrows" value="true" />
+            <set-property name="autosuggestcolumn" value="0" />
+            <set-property name="autosuggestcolumnselect" value="0" />
+            <set-property name="searchfield" value="false" />
+            <set-property name="readonly" value="false" />
+            <set-property name="editable" value="false" />
+            <set-property name="refreshongridclick" value="false" />
+            <set-property name="relateonchange" value="false" />
+            <set-property name="refreshcalculatedonchange" value="false" />
+            <set-property name="defaultsearchfieldorder" value="false" />
+            <set-property name="userselectablesearchfield" value="false" />
+            <set-property name="columnnumber" value="0" />
+            <set-property name="backcolor" value="#f9f9f9ff" />
+            <set-property name="forecolor" value="#000000ff" />
+            <set-property name="databackcolor" value="#f5f5f5ff" />
+            <set-property name="dataforecolor" value="#000000ff" />
+            <set-property name="gadgetmargin" value="0" />
+            <set-property name="gadgethideheader" value="false" />
+            <set-property name="gadgetscriptinglanguage" value="Recital" />
+            <set-property name="gadgetfixedwidth" value="0" />
+            <set-property name="gadgetfixedheight" value="0" />
+            <set-property name="refreshinterval" value="0" />
+            <set-property name="captiongradient" value="false" />
+            <set-property name="captiongradienttype" value="0" />
+            <set-property name="captionfromcolor" value="#fafafaff" />
+            <set-property name="captiontocolor" value="#c0c0c0ff" />
+            <set-property name="transparency" value="0" />
+            <set-property name="controltype" value="Auto" />
+            <set-property name="datatype" value="C" />
+            <set-property name="toolbarvisible" value="true" />
+            <set-property name="applydictionary" value="true" />
+            <set-property name="captionfont" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" />
+            <set-property name="datafont" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0" />
+            <set-property name="labeltype" value="Beside" />
+            <set-property name="labelsize" value="Small" />
+            <set-property name="shadingtype" value="None" />
+            <set-property name="transparencytype" value="None" />
+            <set-property name="labelwidth" value="160" />
+            <set-property name="canvasitemx" value="0" />
+            <set-property name="canvasitemy" value="0" />
+            <set-property name="canvasitemwidth" value="0" />
+            <set-property name="canvasitemheight" value="0" />
+            <set-property name="controlanchor" value="0" />
+            <set-property name="controlanchorright" value="-1" />
+            <set-property name="controlanchorbottom" value="-1" />
+            <set-property name="controlstretch" value="true" />
+            <set-property name="richtext" value="false" />
+            <set-property name="taborder" value="0" />
+            <set-property name="backgroundwidget" value="false" />
+            <set-property name="dialogbuttonaction" value="xcase_import_xcaseimport_setup_txtModelDir_dialogbutton&#40;&#41;" />
+            <set-property name="gadgetinline" value="false" />
+            <set-property name="gadgetstretchwidth" value="false" />
+            <set-property name="treegroupbycolumns" value="-1" />
+            <set-property name="treechecklistmultiselect" value="true" />
+            <set-property name="treeviewalternatingrowcolors" value="false" />
+            <set-property name="treeviewrowheight" value="0" />
+            <set-property name="treeviewfontsize" value="0" />
+            <set-property name="treeviewexpandall" value="false" />
+            <set-property name="treeviewshowindicators" value="false" />
+            <set-property name="treeviewexpanddepth" value="0" />
+            <set-property name="treeviewselectioncolumn" value="0" />
+            <set-property name="treeviewhidecolumnheaders" value="false" />
+            <set-property name="layoutcolumnnumber" value="0" />
+        </formitem>
+    </section>
 </page>
 </app>
