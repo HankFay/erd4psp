@@ -5,6 +5,6 @@ lcOldDataDir = psp_setdatadir(tcDataDir)
 
 create database IF NOT EXISTS (tcDataBase)
 
-=psp_setdatadir(lcOldDataDir)lo
+=psp_setdatadir(lcOldDataDir)
 
 

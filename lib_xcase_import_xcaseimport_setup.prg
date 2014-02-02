@@ -7,6 +7,7 @@ proc xcase_import_xcaseimport_setup_txtModelDir_dialogbutton()
 	else
 		m.cxCaseModelDir = ""
 	endif
+	lianja.get("txtmodeldir").refresh()
 endproc
 
 
